@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang=“en”>
+<head>
+<meta charset=“UTF-8”>
+<title>Птице-пицца</title>
+<style>
+body {
+font-family: Calibri, sans-serif;
+background-color: #f1f1f1;
+}
+header {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+section {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Птице-пицца</h1>
+</header>
+<div class=“content”>
+<section>
+  <h2>О нас</h2>
+  <p>Здесь вы можете прочитать о нашей пиццерии.</p>
+</section>
+
+<section>
+  <h2>Меню</h2>
+  <ul>
+    <li>Маргарита</li>
+    <li>Пепперони</li>
+    <li>Ветчина и грибы</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Как заказать</h2>
+  <ol>
+    <li>Выберите пиццу, которую хотите заказать</li>
+    <li>Нажмите на кнопку "Заказать"</li>
+    <li>Заполните форму заказа</li>
+  </ol>
+</section>
+
+<!-- Форма заказа -->
+<form action="/order" method="POST">
+<label for=“name”>Ваше имя:</label>
+<input type=“text” id=“name” name=“name”><br>
+<label for=“phone”>Ваш телефон:</label>
+<input type=“tel” id=“phone” name=“phone”><br>
+<label for=“address”>Ваш адрес:</label>
+<input type=“text” id=“address” name=“address”><br>
+<label for=“pizza”>Выберите пиццу:</label>
+<select id=“pizza” name=“pizza”>
+<option value=“Маргарита”>Маргарита</option>
+<option value=“Пепперони”>Пепперони</option>
+<option value=“Ветчина и грибы”>Ветчина и грибы</option>
+</select>
+<br>
+<button type=“submit”>Заказать</button>
+</form>
+</div>
+</body>
+</html>
